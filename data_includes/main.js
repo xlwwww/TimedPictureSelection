@@ -32,7 +32,7 @@ newTrial( "welcome" ,
 .log( "ID" , getVar("ID") )
 Template( variable => 
     newTrial( "experiment" ,
-    newAudio('bgm',drumloop_65.wav)
+    newAudio('bgm',"drumloop_65.wav")
         .play()
     ,
     newText("fixation",'+')
