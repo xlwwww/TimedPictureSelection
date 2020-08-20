@@ -12,12 +12,31 @@ newTrial( "welcome" ,
     ,
     newText("<p>Welcome!</p>")
     ,
-    newText("<p>In this experiment, you will have to report which of two pictures matches a description.</p>")
+    newText("<p>In this experiment, you will first see four different kinds of arrows. </p>")
     ,
-    newText("<p>Press the <strong>F</strong> key for the picture on the left, or the <strong>J</strong> key for the picture on the right.</p>")
+    newText("<p>Quickly swipe through corresponding keys as suggested by the pictures with directional arrows.</p>")
+    ,
+    newText("<p>For the first picture, you should swipe keys<strong>A, S, D</strong>. Observe the four pictures and get yourself familiar with swiping on keyboard.</p>")
     ,
     newText("<p>Please enter your ID and then click the button below to start the experiment.</p>")
     ,
+    newImage("1","asd.png")
+         .size(100,100)
+    ,
+    newImage("2","zse.png")
+         .size(100,100)
+    ,
+    newImage("3","qse.png")
+         .size(100,100)
+    ,
+    newImage("4","qsx.png")
+         .size(100,100)
+    , 
+    newCanvas(200,200)
+         .add(   0 , 0 , getImage("1") )
+         .add(   100 , 0 , getImage("2") )
+         .add(   0 , 100 , getImage("3") )
+         .add(   100 , 100 , getImage("4") )
     newTextInput("inputID")
         .print()
     ,
