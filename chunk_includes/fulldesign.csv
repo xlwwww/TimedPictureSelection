@@ -1,9 +1,9 @@
-AudioFile,ImageFile,Item,Group
-m2_syllable_b3_ai1.wav, tone1.png,ai1,1
-m2_syllable_b3_ai2.wav, tone2.png,ai2,1
-m2_syllable_b3_ai3.wav, tone3.png,ai3,1
-m2_syllable_b3_ai4.wav, tone4.png,ai4,1
-m2_syllable_b3_ba1.wav, tone1.png,ba1,1
-m2_syllable_b3_ba2.wav, tone2.png,ba2,1
-m2_syllable_b3_ba3.wav, tone3.png,ba3,1
-m2_syllable_b3_ba4.wav, tone4.png,ba4,1
+AudioFile,ImageFile1,ImageFile2,key1,key2,key3,Item,Group
+m2_syllable_b3_ai1.wav, tone1.png,asd.png,a,s,d,ai1,1
+m2_syllable_b3_ai2.wav, tone2.png,zse.png,z,s,e,ai2,1
+m2_syllable_b3_ai3.wav, tone3.png,qse.png,q,s,e,ai3,1
+m2_syllable_b3_ai4.wav, tone4.png,qsx.png,q,s,x,ai4,1
+m2_syllable_b3_ba1.wav, tone1.png,asd.png,a,s,d,ba1,1
+m2_syllable_b3_ba2.wav, tone2.png,zse.png,z,s,e,ba2,1
+m2_syllable_b3_ba3.wav, tone3.png,qse.png,q,s,e,ba3,1
+m2_syllable_b3_ba4.wav, tone4.png,qsx.png,q,s,x,ba4,1
