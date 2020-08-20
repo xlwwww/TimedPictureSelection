@@ -37,6 +37,8 @@ newTrial( "welcome" ,
          .add(   100 , 0 , getImage("2") )
          .add(   0 , 100 , getImage("3") )
          .add(   100 , 100 , getImage("4") )
+         .print()
+    ,
     newTextInput("inputID")
         .print()
     ,
