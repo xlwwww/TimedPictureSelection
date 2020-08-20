@@ -49,11 +49,11 @@ Template( variable =>
         .play()
     ,
 
-    newImage("gesture", variable.PluralImageFile)
+    newImage("gesture", variable.ImageFile)
         .size(200,200)
     ,
 
-    newCanvas(450,200)
+    newCanvas(200,200)
         .add(   0 , 0 , getImage("gesture") )
         .print()
     ,
