@@ -75,7 +75,7 @@ Template( variable =>
         .log()
         .wait()
     ,
-    newKey('third',variable.key2)
+    newKey('third',variable.key3)
         .log()
         .wait()
     ,
