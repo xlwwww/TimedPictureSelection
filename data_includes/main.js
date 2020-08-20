@@ -48,37 +48,29 @@ Template( variable =>
     newAudio("tone", variable.AudioFile)
         .play()
     ,
-    newText(variable.Description)
-        .unfold(2600)
-    ,
-    newImage("two", variable.PluralImageFile)
+
+    newImage("gesture", variable.PluralImageFile)
         .size(200,200)
     ,
-    newImage("one", variable.SingularImageFile)
-        .size(200,200)
-    ,
+
     newCanvas(450,200)
-        .add(   0 , 0 , getImage("two") )
-        .add( 250 , 0 , getImage("one") )
+        .add(   0 , 0 , getImage("gesture") )
         .print()
     ,
     newSelector()
-        .add( getImage("two") , getImage("one") )
+        .add( getImage("gesture"))
         .shuffle()
-        .keys(          "F"    ,          "J"   )
+        .keys("F" )
         .log()
         .wait()
     ,
-    getAudio("description")
-       .wait("first")
-    ,
+
     newTimer(500)
         .start()
         .wait()
   )
   .log( "ID"     , getVar("ID")    )
   .log( "Item"   , variable.Item   )
-  .log( "Ending" , variable.Ending )
   .log( "Group"  , variable.Group  )
 )
 SendResults( "send" )
