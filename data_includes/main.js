@@ -52,7 +52,7 @@ Template( variable =>
     newImage("gesture", variable.ImageFile)
         .size(200,200)
     ,
-    newHtml("feedback", "Feedback.html")
+    newHtml("feedback", "drag.html")
     .log()
     .print()
 ,
