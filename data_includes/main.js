@@ -52,7 +52,16 @@ Template( variable =>
     newImage("gesture", variable.ImageFile)
         .size(200,200)
     ,
-
+    newHtml("feedback", "Feedback.html")
+    .log()
+    .print()
+,
+newButton("send", "Send")
+    .print()
+    .wait()
+    getHtml('feedback')
+         .remove()
+      ,
     newCanvas(200,200)
         .add(   0 , 0 , getImage("gesture") )
         .print()
