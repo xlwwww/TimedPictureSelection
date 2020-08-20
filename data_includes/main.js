@@ -80,9 +80,11 @@ Template( variable =>
         .wait()
     ,
 
-    newTimer(500)
-        .start()
-        .wait()
+    newText("continue","Press space bar to continue;")
+        .print()
+    ,
+    newKey('space',' ')
+         .wait()
   )
   .log( "ID"     , getVar("ID")    )
   .log( "Item"   , variable.Item   )
