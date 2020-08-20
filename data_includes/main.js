@@ -59,6 +59,7 @@ Template( variable =>
 newButton("send", "Send")
     .print()
     .wait()
+     ,
     getHtml('feedback')
          .remove()
       ,
