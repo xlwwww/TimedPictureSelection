@@ -45,26 +45,37 @@ Template( variable =>
     getText('fixation')
         .remove()
     ,
+
+    newImage("gesture", variable.ImageFile1)
+        .size(200,200)
+        .print()
+    ,
+    newTimer("wait", 800)
+        .start()
+        .wait()
+    ,
+    getImage('gesture')
+        .remove()
+    ,
     newAudio("tone", variable.AudioFile)
         .play()
     ,
-
-    newImage("gesture", variable.ImageFile)
+    newImage("gesture_key",variable.ImageFile2)
         .size(200,200)
     ,
     newCanvas(200,200)
-        .add(   0 , 0 , getImage("gesture") )
+        .add(   0 , 0 , getImage("gesture_key") )
         .print()
     ,
-    newKey('first','A')
+    newKey('first',variable.key1)
         .log()
         .wait()
     ,
-    newKey('second','S')
+    newKey('second',variable.key2)
         .log()
         .wait()
     ,
-    newKey('third','D')
+    newKey('third',variable.key2)
         .log()
         .wait()
     ,
