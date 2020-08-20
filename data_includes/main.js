@@ -63,7 +63,7 @@ Template( variable =>
     newImage("gesture_key",variable.ImageFile2)
         .size(200,200)
     ,
-    newCanvas(200,200)
+    newCanvas("key",200,200)
         .add(   0 , 0 , getImage("gesture_key") )
         .print()
     ,
@@ -79,7 +79,9 @@ Template( variable =>
         .log()
         .wait()
     ,
-
+    getCanvas("key")
+        .remove()
+    ,
     newText("continue","Press space bar to continue;")
         .print()
     ,
